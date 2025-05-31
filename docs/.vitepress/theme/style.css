@@ -137,3 +137,15 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* docs/.vitepress/theme/custom.css */
+.custom-logo {
+  height: 32px; /* 调整图标高度 */
+  margin-right: 8px; /* 与标题的间距 */
+  vertical-align: middle; /* 垂直居中 */
+}
+
+/* 确保标题和图标在导航栏中对齐 */
+.VPLink.VPNavBarTitle {
+  display: flex;
+  align-items: center;
+}
