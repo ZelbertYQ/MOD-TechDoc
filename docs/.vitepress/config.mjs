@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MOD-TechDoc",
   description: "A VitePress Site",
+  base: '/MOD-TechDoc/', // 添加这一行
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
