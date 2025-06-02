@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'MOD教程文档',
+  title: 'MOD技术文档',
   head: [["link", { rel: "icon", href: "/MOD-TechDoc/favicon.png" }]],
   description: 'A VitePress Site',
   base: '/MOD-TechDoc/', // 部署路径
@@ -44,64 +44,300 @@ export default defineConfig({
     sidebar: {
       '/快速指南/': [
         {
-          text: '快速指南',
+          //text: '快速指南',
+          //collapsed: false,
           items: [
-            { text: '板块概述', link: '/快速指南/板块概述' },
+            { text: '板块概述', link: '/快速指南/板块概述' }
+          ]
+        },
+        {
+          text: '快速指南',
+          //collapsed: false,
+          items: [
+            //{ text: '板块概述', link: '/快速指南/板块概述' },
             { text: '本站说明', link: '/快速指南/本站说明' },
             { text: '使用方法', link: '/快速指南/使用方法' },
-            { text: '网站整合', link: '/快速指南/网站整合' },
-            //{ text: 'XXX', link: '/快速指南/XXX' }
+            { text: '网站整合', link: '/快速指南/网站整合' }
           ]
         }
       ],
       '/环境配置/': [
         {
-          text: '环境配置',
+          //text: '环境配置概述',
+          //collapsed: false,
           items: [
-            { text: '板块概述', link: '/环境配置/板块概述' },
-            { text: '游玩环境配置', link: '/环境配置/游玩环境配置' },
-            { text: '开发环境配置', link: '/环境配置/开发环境配置' }
+            { text: '板块概述', link: '/环境配置/板块概述' }
+          ]
+        },
+        {
+          text: '游玩环境配置',
+          //collapsed: false,
+          items: [
+            {
+              text: '本地环境',
+              //collapsed: false,
+              items: [
+                { text: '电脑环境', link: '/环境配置/游玩环境配置/本地环境/电脑环境' },
+                { text: '游戏环境', link: '/环境配置/游玩环境配置/本地环境/游戏环境' }
+              ]
+            },
+            {
+              text: 'MOD加载器',
+              //collapsed: false,
+              items: [
+                { text: '散装加载器', link: '/环境配置/游玩环境配置/MOD加载器/散装加载器' },
+                { text: '整合加载器', link: '/环境配置/游玩环境配置/MOD加载器/整合加载器' }
+              ]
+            },
+            {
+              text: 'MOD管理器',
+              //collapsed: false,
+              items: [
+                { text: '手动管理', link: '/环境配置/游玩环境配置/MOD管理器/手动管理' },
+                { text: '自动管理', link: '/环境配置/游玩环境配置/MOD管理器/自动管理' }
+              ]
+            }
+          ]
+        },
+        {
+          text: '制作开发环境配置',
+          //collapsed: false,
+          items: [
+            {
+              text: '制作环境配置',
+              //collapsed: false,
+              items: [
+                { text: 'XXMI', link: '/环境配置/制作开发环境配置/制作环境配置/XXMI' },
+                { text: 'Blender', link: '/环境配置/制作开发环境配置/制作环境配置/Blender' },
+                { text: 'Paint.NET', link: '/环境配置/制作开发环境配置/制作环境配置/Paint.NET' }
+                //{ text: 'VSCode插件', link: '/基础MOD教程/前置准备/软件相关/Blender/Blender基础' }
+              ]
+            },
+            {
+              text: '开发环境配置',
+              //collapsed: false,
+              items: [
+                { text: 'VSCode', link: '/环境配置/制作开发环境配置/开发环境配置/VSCode' }
+              ]
+            },
+            {
+              text: '配套插件安装',
+              //collapsed: false,
+              items: [
+                { text: 'Blender', link: '/环境配置/制作开发环境配置/配套插件安装/Blender' },
+                { text: 'Paint.NET', link: '/环境配置/制作开发环境配置/配套插件安装/Paint.NET' },
+                { text: 'VSCode', link: '/环境配置/制作开发环境配置/配套插件安装/VSCode' }
+              ]
+            }
           ]
         }
       ],
       '/基础MOD教程/': [
         {
-          text: '板块概述',
+          //text: '教程概述',
+          //collapsed: false,
           items: [
             { text: '板块概述', link: '/基础MOD教程/板块概述' }
           ]
         },
         {
-          text: '前置准备',
+          text: '文件解析',
+          //collapsed: false,
           items: [
-            { text: '前置准备', link: '/基础MOD教程/前置准备' }
+            { text: '后缀解析',link: '/基础MOD教程/文件解析/后缀解析' },
+            { text: '缩写解析',link: '/基础MOD教程/文件解析/缩写解析' },
+            { text: '功能解析', link: '/基础MOD教程/文件解析/功能解析' }
+            //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
           ]
         },
         {
-          text: '软件管理',
+          text: '基础模型替换',
+          //collapsed: false,
           items: [
-            { text: '软件管理', link: '/基础MOD教程/软件管理' }
+            { text: '转储导入',link: '/基础MOD教程/基础模型替换/转储导入' },
+            { text: '数据匹配',link: '/基础MOD教程/基础模型替换/数据匹配' },
+            { text: '合并导出', link: '/基础MOD教程/基础模型替换/合并导出' }
+            //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
+          ]
+        },
+        {
+          text: '完整面部替换',
+          //collapsed: false,
+          items: [
+            { text: '形态键配置',link: '/基础MOD教程/完整面部替换/形态键配置' },
+            {
+              text: '光照配置',
+              //collapsed: false,
+              items: [
+                { text: '原生光照',link: '/基础MOD教程/完整面部替换/光照配置/原生光照' },
+                { text: '自定义光照',link: '/基础MOD教程/完整面部替换/光照配置/自定义光照' },
+                //{ text: '合并导出', link: '/基础MOD教程/前置准备/软件相关/Blender/Blender基础' }
+                //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
+              ]
+            }
+            //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
           ]
         }
       ],
       '/进阶MOD教程/': [
         {
-          text: '进阶MOD教程',
+          //text: '教程概述',
+          //collapsed: false,
           items: [
-            { text: '板块概述', link: '/进阶MOD教程/板块概述' },
-            { text: '配置文件文档', link: '/进阶MOD教程/配置文件文档' },
-            { text: '贴图通道文档', link: '/进阶MOD教程/贴图通道文档' },
-            { text: '着色联动文档', link: '/进阶MOD教程/着色联动文档' },
-            { text: '可视化面板文档', link: '/进阶MOD教程/可视化面板文档' }
+            { text: '板块概述', link: '/进阶MOD教程/板块概述' }
+          ]
+        },
+        {
+          text: '颜色通道',
+          collapsed: true,
+          items: [
+            // { text: 'COLOR', link: '/进阶MOD教程/配置文件文档' },
+            // { text: 'COLOR1', link: '/进阶MOD教程/贴图通道文档' },
+            {
+              text: '颜色属性',
+              collapsed: false,
+              items: [
+                { text: 'COLOR', link: '/进阶MOD教程/颜色通道/颜色属性/COLOR' },
+                { text: 'COLOR1', link: '/进阶MOD教程/颜色通道/颜色属性/COLOR1' }
+              ]
+            },
+            {
+              text: '贴图通道',
+              collapsed: false,
+              items: [
+                {
+                  text: '漫反射贴图',
+                  //collapsed: false,
+                  items: [
+                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/漫反射贴图/配置规范' },
+                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/漫反射贴图/通道解释' }
+                  ]
+                },
+                {
+                  text: '材质贴图',
+                  //collapsed: false,
+                  items: [
+                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/材质贴图/配置规范' },
+                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/材质贴图/通道解释' }
+                  ]
+                },
+                {
+                  text: '法线贴图',
+                  //collapsed: false,
+                  items: [
+                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/法线贴图/配置规范' },
+                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/法线贴图/通道解释' }
+                  ]
+                },
+                {
+                  text: '高光贴图',
+                  //collapsed: false,
+                  items: [
+                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/高光贴图/配置规范' },
+                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/高光贴图/通道解释' }
+                  ]
+                },
+                {
+                  text: '特效贴图',
+                  //collapsed: false,
+                  items: [
+                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/特效贴图/配置规范' },
+                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/特效贴图/通道解释' }
+                  ]
+                },
+                {
+                  text: '遮罩贴图',
+                  //collapsed: false,
+                  items: [
+                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/遮罩贴图/配置规范' },
+                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/遮罩贴图/通道解释' }
+                  ]
+                },
+              ]
+            },
+          ]
+        },
+        {
+          text: '配置文件',
+          //collapsed: false,
+          items: [
+            {
+              text: '代码节',
+              //collapsed: false,
+              items: [
+                {
+                  text: '基础',
+                  //collapsed: false,
+                  items: [
+                    { text: '[Constants]', link: '/进阶MOD教程/配置文件/代码节/基础/[Constants]' },
+                    { text: '[Present]', link: '/进阶MOD教程/配置文件/代码节/基础/[Present]' },
+                    { text: '[Resource_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/[Resource_Name]' },
+                    //{ text: '[Key_Name]', link: '/进阶MOD教程/配置文件文档' },
+                    { text: '[TextureOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/[TextureOverride_Name]' },
+                    { text: '[ShadereOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/[ShadereOverride_Name]' }
+                  ]
+                },
+                {
+                  text: '进阶',
+                  //collapsed: false,
+                  items: [
+                    //{ text: '操作符', link: '/进阶MOD教程/配置文件文档' },
+                    { text: '[Key_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/[Key_Name]' },
+                    { text: '[CommandList_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/[CommandList_Name]' },
+                   // { text: '[ShaderRegexDiffuse]', link: '/进阶MOD教程/配置文件文档' },
+                    //{ text: '通道解释', link: '/进阶MOD教程/贴图通道文档' }
+                  ]
+                },
+                {
+                  text: '超纲',
+                  //collapsed: false,
+                  items: [
+                    { text: '着色器正则匹配', link: '/进阶MOD教程/配置文件/代码节/超纲/着色器正则匹配' },
+                    //{ text: '[ShaderRegex_Name]', link: '/进阶MOD教程/配置文件文档' },
+                    //{ text: '[ShaderRegex_Name.Pattern]', link: '/进阶MOD教程/配置文件文档' },
+                    //{ text: '[ShaderRegex_Name.Pattern.Replace]', link: '/进阶MOD教程/配置文件文档' },
+                    //{ text: '[ShaderRegex_Name.InsertDeclarations]', link: '/进阶MOD教程/贴图通道文档' }
+                  ]
+                },
+              ]
+            },
+            {
+              text: '操作项',
+              //collapsed: false,
+              items: [
+                { text: '静态', link: '/进阶MOD教程/配置文件/操作项/静态' },
+                { text: '动态', link: '/进阶MOD教程/配置文件/操作项/动态' },
+                //{ text: '处理', link: '/进阶MOD教程/可视化面板文档' }
+              ]
+            },
+          ]
+        },
+        {
+          text: '着色修改',
+          //collapsed: false,
+          items: [
+            { text: '简单修改', link: '/进阶MOD教程/着色修改/简单修改' },
+            { text: '接口调用', link: '/进阶MOD教程/着色修改/接口调用' },
+            { text: '高级着色语言', link: '/进阶MOD教程/着色修改/高级着色语言' },
+            { text: '汇编语言', link: '/进阶MOD教程/着色修改/汇编语言' }
+          ]
+        },
+        {
+          text: '交互面板',
+          //collapsed: false,
+          items: [
+            { text: '解构', link: '/进阶MOD教程/交互面板/解构' },
+            { text: '重塑', link: '/进阶MOD教程/交互面板/重塑' },
+            { text: '封装', link: '/进阶MOD教程/交互面板/封装' }
           ]
         }
       ],
       '/未归档/': [
         {
-          text: '未归档',
+          //text: '着色调用',
+          //collapsed: false,
           items: [
-            { text: '板块概述', link: '/未归档/板块概述' },
-            //{ text: '待填充', link: '/未归档/待填充' }
+            { text: '板块概述', link: '/未归档/板块概述' }
           ]
         }
       ]
@@ -119,6 +355,13 @@ export default defineConfig({
         },
         link: 'https://www.caimogu.cc/circle/440.html',
         ariaLabel: 'Caimogu 社区'
+      },
+      {
+        icon: {
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 80 80"><title>Afdian</title><defs><style>.afdian-cls-1{fill:#a683ee}.afdian-cls-2{fill:#9972e7}.afdian-cls-3{fill:#ab86f6}.afdian-cls-4{fill:#9a73e9}.afdian-cls-5{fill:#aa88f0}.afdian-cls-6{fill:none}.afdian-cls-7{fill:none}.afdian-cls-8{fill:#9972e7}</style></defs><g><path class="afdian-cls-7" d="M40,79.95c-12.46,0-24.91-.05-37.36.05-2,.02-2.63-.24-2.62-2.48C.12,52.59.13,27.66,0,2.73-.01.21.7,0,2.88,0c24.74.08,49.49.08,74.23,0,2.18,0,2.9.21,2.88,2.73-.13,24.93-.12,49.85-.01,74.78,0,2.25-.62,2.5-2.62,2.48-12.45-.11-24.91-.05-37.36-.05Z"/><path class="afdian-cls-3" d="M70.98,34.91c3.14,3.76,2.41,8.17,1.58,12.32-.47,2.37-.29,3.6,1.81,4.8,1.96,1.12,3.39,2.89,2.35,5.37-1.09,2.59-3.54,3.28-5.82,2.49-2.96-1.03-4.46.41-6.4,2.13-10.05,8.91-31.96,9.23-42.3.67-2.41-2-4.77-4.18-4.95-7.69,1.34-.6,2.7-.67,4.06-.05,9.39,10.49,21.02,10.76,33.4,7.2,3.72-1.07,7.23-2.66,8.38-7,.26-.99.96-1.76,2.2-1.57,1.28,1.1,2.86,1.43,4.82,1.67-1.61-.43-3.05-.31-4.14-1.25-1.9-1.21-4.17-3.15-1.43-4.75,4.59-2.69,4.31-6.37,3.73-10.51-.07-.48.03-.97.16-1.45.54-1.13,1.37-1.94,2.56-2.36Z"/><path class="afdian-cls-4" d="M20.15,54.81c-.87,1.62-1.9.65-2.89.18-1.21-5.09.51-9.08,4.54-12.24,1.08-.85,2.18-1.34,1.71-3.49-.9-4.13,1.03-5.46,5.44-4.33,1.4.36,3.34,1.46,3.65-.64.28-1.89-1.98-1.03-3.09-1.25-4.51-.9-9.16-1.16-13.47-3.01-.76-.92-.91-1.91-.35-2.99,1.62-1.5,3.46-.84,5.19-.39,4.99,1.29,10.23,1.35,15.12,3.07,1.93.68,3.09-.77,4.57-1.38,1.95-.8,4.32-2.33,5.69.25,1.36,2.55-1.15,3.86-2.94,4.96-3.96,2.44-7.82,5.04-11.7,7.62-5.15,3.44-10.01,7.09-11.48,13.63Z"/><path class="afdian-cls-8" d="M16.04,27.12c0,.97,0,1.95,0,2.92-4.52-.19-8.19-2.2-11.19-5.47-3.25-3.54-2.81-7.4,1.24-10.03,3.38-2.19,7.21-3.23,11.22-3.51,2-.14,4.37-.25,5,2.12.58,2.2-1.68,2.92-3.18,3.82-.83.5-1.81.76-2.73,1.12-1.2,1.61.46,1.4,1.05,1.39,4.51-.12,9.05.53,13.54-.34,2-.03,4.01-.07,6.01-.1.27,2.05-1.14,2.96-2.61,3.82-2.74.87-5.58.53-8.38.62-3.25-.16-6.5-.03-9.74-.09-2.83-.04-5.66-.15-8.09-1.71,2.09,2.51,5.54,3.13,7.86,5.44Z"/><path class="afdian-cls-2" d="M35,21.95c-.13-1.51,1.41-1.88,2-2.91,14.46-1.43,26.21,2.96,33.98,15.87-.1,1.37-.83,2.1-2.2,2.17-1.8.03-2.5-1.43-3.38-2.58-5.79-7.47-13.57-10.78-22.83-11.18-2.56-.11-5.35.77-7.56-1.37Z"/><path class="afdian-cls-2" d="M30.99,19.14c-4.71,1.87-9.6.63-14.41.75-1.25.03-1.55-1.02-.19-1.79,4.73,2.2,9.76.27,14.59,1.05Z"/><path class="afdian-cls-7" d="M35,21.95c3.98.12,8-.09,11.92.43,9.63,1.28,16.85,6.41,21.86,14.7,1.34,3.48,1.61,6.97.19,10.49-.35.87-.43,2-1.74,2-5.81,0-1.82,2.63-1.19,4.37l-.1.13c-.47.14-1.34.22-1.37.42-1.07,7.27-7.16,8.36-12.55,9.85-8.21,2.27-16.33,1.32-24.15-2.07-3.49-1.51-5.7-4.39-7.72-7.45-.61-4.34,1.06-7.41,4.6-10.06,5.98-4.47,12.09-8.7,18.44-12.61,1.27-.78,3.68-1.45,2.45-3.52-1.02-1.71-2.76-.28-3.88.53-2.59,1.86-4.96,2.04-8.2,1.12-5.69-1.60-11.67-2.16-17.52-3.16-6.38-1.33-9.3-3.89-9.57-9.31,2.23,3.64,5.04,4.71,8.45,4.27,3.77.75,7.55.71,11.32.03,2.92-.05,5.84-.11,8.76-.16Z"/><path class="afdian-cls-6" d="M66.03,53.94c2.60.24,5.52-.65,8.03,2.37-3.61.85-6.09.11-8.14-2.25,0,0,.1-.13.1-.13Z"/><path class="afdian-cls-2" d="M26.24,22.11c-3.78,1.11-7.55,1.14-11.32-.03,3.77.01,7.55.02,11.32.03Z"/><path class="afdian-cls-5" d="M30.52,47.06c.93-.03,1.64.45,1.81,1.28.22,1.10-.45,1.86-1.52,2.08-.97.20-1.53-.47-1.72-1.29-.25-1.11.24-1.87,1.42-2.07Z"/><path class="afdian-cls-1" d="M48.94,54c0,.76-.47,1.38-1.33,1.58-.98.24-1.53-.42-1.67-1.25-.18-1.06.23-2.02,1.43-2.03.81,0,1.45.60,1.57,1.70Z"/></g></svg>`
+        },
+        link: 'https://afdian.com/a/Zelbert',
+        ariaLabel: 'Afdian 社区'
       }
     ],
 
