@@ -269,12 +269,12 @@ export default defineConfig({
                   text: '基础',
                   //collapsed: false,
                   items: [
-                    { text: '[Constants]', link: '/进阶MOD教程/配置文件/代码节/基础/[Constants]' },
-                    { text: '[Present]', link: '/进阶MOD教程/配置文件/代码节/基础/[Present]' },
-                    { text: '[Resource_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/[Resource_Name]' },
+                    { text: '[Constants]', link: '/进阶MOD教程/配置文件/代码节/基础/Constants' },
+                    { text: '[Present]', link: '/进阶MOD教程/配置文件/代码节/基础/Present' },
+                    { text: '[Resource_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/Resource_Name' },
                     //{ text: '[Key_Name]', link: '/进阶MOD教程/配置文件文档' },
-                    { text: '[TextureOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/[TextureOverride_Name]' },
-                    { text: '[ShadereOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/[ShadereOverride_Name]' }
+                    { text: '[TextureOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/TextureOverride_Name' },
+                    { text: '[ShadereOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/ShadereOverride_Name' }
                   ]
                 },
                 {
@@ -282,8 +282,8 @@ export default defineConfig({
                   //collapsed: false,
                   items: [
                     //{ text: '操作符', link: '/进阶MOD教程/配置文件文档' },
-                    { text: '[Key_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/[Key_Name]' },
-                    { text: '[CommandList_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/[CommandList_Name]' },
+                    { text: '[Key_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/Key_Name' },
+                    { text: '[CommandList_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/CommandList_Name' },
                    // { text: '[ShaderRegexDiffuse]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '通道解释', link: '/进阶MOD教程/贴图通道文档' }
                   ]
