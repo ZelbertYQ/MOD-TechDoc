@@ -269,9 +269,9 @@ export default defineConfig({
                   text: '基础',
                   //collapsed: false,
                   items: [
-                    { text: '[常量]', link: '/进阶MOD教程/配置文件/代码节/基础/Constants' },
+                    { text: '[Constants]', link: '/进阶MOD教程/配置文件/代码节/基础/Constants' },
                     { text: '[Present]', link: '/进阶MOD教程/配置文件/代码节/基础/Present' },
-                    { text: '资源', link: '/进阶MOD教程/配置文件/代码节/基础/Resource_Name' },
+                    { text: '[Resource_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/Resource_Name' },
                     //{ text: '[Key_Name]', link: '/进阶MOD教程/配置文件文档' },
                     { text: '[TextureOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/TextureOverride_Name' },
                     { text: '[ShadereOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/ShadereOverride_Name' }
