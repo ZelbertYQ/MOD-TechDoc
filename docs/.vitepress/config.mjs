@@ -40,7 +40,8 @@ export default defineConfig({
       { text: '环境配置', link: '/A2.环境配置/A2_1.环境配置概述', activeMatch: '/A2.环境配置/' },
       { text: '基础MOD教程', link: '/A3.基础MOD教程/A3_1.基础MOD教程概述', activeMatch: '/A3.基础MOD教程/' },
       { text: '进阶MOD教程', link: '/A4.进阶MOD教程/A4_1.进阶MOD教程概述', activeMatch: '/A4.进阶MOD教程/' },
-      { text: '未归档', link: '/A5.未归档/A5_1.未归档概述', activeMatch: '/A5.未归档/' }
+      { text: '未归档', link: '/A5.未归档/A5_1.未归档概述', activeMatch: '/A5.未归档/' },
+      { text: '语法笔记', link: '/A6.语法笔记/A6_1.语法笔记概述', activeMatch: '/A6.语法笔记/' }
     ],
     // 侧边栏（为每个一级导航路径配置独立的侧边栏）
     sidebar: {
@@ -119,7 +120,8 @@ export default defineConfig({
               text: '开发环境配置',
               //collapsed: false,
               items: [
-                { text: 'VSCode', link: '/A2.环境配置/B2.制作开发环境配置/C2.开发环境配置/C2_1.VSCode' }
+                { text: '技术栈', link: '/A2.环境配置/B2.制作开发环境配置/C2.开发环境配置/C2_1.技术栈' },
+                { text: 'VSCode', link: '/A2.环境配置/B2.制作开发环境配置/C2.开发环境配置/C2_2.VSCode' }
                 //{ text: 'VSCode', link: '/环境配置/制作开发环境配置/开发环境配置/VSCode' }
               ]
             },
@@ -341,6 +343,17 @@ export default defineConfig({
           //collapsed: false,
           items: [
             { text: '未归档概述', link: '/A5.未归档/A5_1.未归档概述' }
+          ]
+        }
+      ],
+      '/A6.语法笔记/': [
+        {
+          //text: '着色调用',
+          //collapsed: false,
+          items: [
+            { text: '语法笔记概述', link: '/A6.语法笔记/A6_1.语法笔记概述' },
+            { text: 'MarkDown语法', link: '/A6.语法笔记/A6_2.MarkDown语法' },
+            { text: 'Vitepress语法', link: '/A6.语法笔记/A6_3.Vitepress语法' }
           ]
         }
       ]
