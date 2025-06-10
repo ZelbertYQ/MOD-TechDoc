@@ -272,7 +272,7 @@ export default defineConfig({
                   text: '基础',
                   //collapsed: false,
                   items: [
-                    { text: 'Constants', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_1.Constants' },
+                    { text: '[Constants]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_1.Constants' },
                     { text: '[Present]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_2.Present' },
                     { text: '[Resource_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_3.Resource_Name' },
                     //{ text: '[Key_Name]', link: '/进阶MOD教程/配置文件文档' },
