@@ -272,12 +272,12 @@ export default defineConfig({
                   text: '基础',
                   //collapsed: false,
                   items: [
-                    { text: '[Constants]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_1.[Constants]' },
-                    { text: '[Present]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_2.[Present]' },
-                    { text: '[Resource_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_3.[Resource_Name]' },
+                    { text: '[Constants]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_1.Constants' },
+                    { text: '[Present]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_2.Present' },
+                    { text: '[Resource_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_3.Resource_Name' },
                     //{ text: '[Key_Name]', link: '/进阶MOD教程/配置文件文档' },
-                    { text: '[TextureOverride_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_4.[TextureOverride_Name]' },
-                    { text: '[ShadereOverride_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_5.[ShadereOverride_Name]' }
+                    { text: '[TextureOverride_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_4.TextureOverride_Name' },
+                    { text: '[ShadereOverride_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_5.ShadereOverride_Name' }
                   ]
                 },
                 {
@@ -285,8 +285,8 @@ export default defineConfig({
                   //collapsed: false,
                   items: [
                     //{ text: '操作符', link: '/进阶MOD教程/配置文件文档' },
-                    { text: '[Key_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D2.进阶/D2_1.[Key_Name]' },
-                    { text: '[CommandList_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D2.进阶/D2_2.[CommandList_Name]' }
+                    { text: '[Key_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D2.进阶/D2_1.Key_Name' },
+                    { text: '[CommandList_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D2.进阶/D2_2.CommandList_Name' }
                    // { text: '[ShaderRegexDiffuse]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '通道解释', link: '/进阶MOD教程/贴图通道文档' }
                   ]
