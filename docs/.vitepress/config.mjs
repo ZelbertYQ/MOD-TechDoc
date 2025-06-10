@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+
+//npm run docs:dev
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
@@ -34,39 +36,39 @@ export default defineConfig({
     // 导航栏
     nav: [
       { text: '主页', link: '/' },
-      { text: '快速指南', link: '/快速指南/板块概述' },
-      { text: '环境配置', link: '/环境配置/板块概述' },
-      { text: '基础MOD教程', link: '/基础MOD教程/板块概述' },
-      { text: '进阶MOD教程', link: '/进阶MOD教程/板块概述' },
-      { text: '未归档', link: '/未归档/板块概述' }
+      { text: '快速指南', link: '/A1.快速指南/A1_1.快速指南概述', activeMatch: '/A1.快速指南/' },
+      { text: '环境配置', link: '/A2.环境配置/A2_1.环境配置概述', activeMatch: '/A2.环境配置/' },
+      { text: '基础MOD教程', link: '/A3.基础MOD教程/A3_1.基础MOD教程概述', activeMatch: '/A3.基础MOD教程/' },
+      { text: '进阶MOD教程', link: '/A4.进阶MOD教程/A4_1.进阶MOD教程概述', activeMatch: '/A4.进阶MOD教程/' },
+      { text: '未归档', link: '/A5.未归档/A5_1.未归档概述', activeMatch: '/A5.未归档/' }
     ],
     // 侧边栏（为每个一级导航路径配置独立的侧边栏）
     sidebar: {
-      '/快速指南/': [
+      '/A1.快速指南/': [
         {
           //text: '快速指南',
           //collapsed: false,
           items: [
-            { text: '板块概述', link: '/快速指南/板块概述' }
+            { text: '快速指南概述', link: '/A1.快速指南/A1_1.快速指南概述' }
           ]
         },
         {
           text: '快速指南',
           //collapsed: false,
           items: [
-            //{ text: '板块概述', link: '/快速指南/板块概述' },
-            { text: '本站说明', link: '/快速指南/本站说明' },
-            { text: '使用方法', link: '/快速指南/使用方法' },
-            { text: '网站整合', link: '/快速指南/网站整合' }
+            //{ text: '板块概述', link: '/A1.快速指南/A1_1.板块概述' },
+            { text: '本站说明', link: '/A1.快速指南/A1_2.本站说明' },
+            { text: '使用方法', link: '/A1.快速指南/A1_3.使用方法' },
+            { text: '网站整合', link: '/A1.快速指南/A1_4.网站整合' }
           ]
         }
       ],
-      '/环境配置/': [
+      '/A2.环境配置/': [
         {
           //text: '环境配置概述',
           //collapsed: false,
           items: [
-            { text: '板块概述', link: '/环境配置/板块概述' }
+            { text: '环境配置概述', link: '/A2.环境配置/A2_1.环境配置概述' }
           ]
         },
         {
@@ -77,24 +79,24 @@ export default defineConfig({
               text: '本地环境',
               //collapsed: false,
               items: [
-                { text: '电脑环境', link: '/环境配置/游玩环境配置/本地环境/电脑环境' },
-                { text: '游戏环境', link: '/环境配置/游玩环境配置/本地环境/游戏环境' }
+                { text: '电脑环境', link: '/A2.环境配置/B1.游玩环境配置/C1.本地环境/C1_1.电脑环境' },
+                { text: '游戏环境', link: '/A2.环境配置/B1.游玩环境配置/C1.本地环境/C1_2.游戏环境' }
               ]
             },
             {
               text: 'MOD加载器',
               //collapsed: false,
               items: [
-                { text: '散装加载器', link: '/环境配置/游玩环境配置/MOD加载器/散装加载器' },
-                { text: '整合加载器', link: '/环境配置/游玩环境配置/MOD加载器/整合加载器' }
+                { text: '散装加载器', link: '/A2.环境配置/B1.游玩环境配置/C2.MOD加载器/C2_1.散装加载器' },
+                { text: '整合加载器', link: '/A2.环境配置/B1.游玩环境配置/C2.MOD加载器/C2_2.整合加载器' }
               ]
             },
             {
               text: 'MOD管理器',
               //collapsed: false,
               items: [
-                { text: '手动管理', link: '/环境配置/游玩环境配置/MOD管理器/手动管理' },
-                { text: '自动管理', link: '/环境配置/游玩环境配置/MOD管理器/自动管理' }
+                { text: '手动管理', link: '/A2.环境配置/B1.游玩环境配置/C3.MOD管理器/C3_1.手动管理' },
+                { text: '自动管理', link: '/A2.环境配置/B1.游玩环境配置/C3.MOD管理器/C3_2.自动管理' }
               ]
             }
           ]
@@ -107,9 +109,9 @@ export default defineConfig({
               text: '制作环境配置',
               //collapsed: false,
               items: [
-                { text: 'XXMI', link: '/环境配置/制作开发环境配置/制作环境配置/XXMI' },
-                { text: 'Blender', link: '/环境配置/制作开发环境配置/制作环境配置/Blender' },
-                { text: 'Paint.NET', link: '/环境配置/制作开发环境配置/制作环境配置/Paint.NET' }
+                { text: 'XXMI', link: '/A2.环境配置/B2.制作开发环境配置/C1.制作环境配置/C1_1.XXMI' },
+                { text: 'Blender', link: '/A2.环境配置/B2.制作开发环境配置/C1.制作环境配置/C1_2.Blender' },
+                { text: 'Paint.NET', link: '/A2.环境配置/B2.制作开发环境配置/C1.制作环境配置/C1_3.Paint.NET' }
                 //{ text: 'VSCode插件', link: '/基础MOD教程/前置准备/软件相关/Blender/Blender基础' }
               ]
             },
@@ -117,36 +119,37 @@ export default defineConfig({
               text: '开发环境配置',
               //collapsed: false,
               items: [
-                { text: 'VSCode', link: '/环境配置/制作开发环境配置/开发环境配置/VSCode' }
+                { text: 'VSCode', link: '/A2.环境配置/B2.制作开发环境配置/C2.开发环境配置/C2_1.VSCode' }
+                //{ text: 'VSCode', link: '/环境配置/制作开发环境配置/开发环境配置/VSCode' }
               ]
             },
             {
               text: '配套插件安装',
               //collapsed: false,
               items: [
-                { text: 'Blender', link: '/环境配置/制作开发环境配置/配套插件安装/Blender' },
-                { text: 'Paint.NET', link: '/环境配置/制作开发环境配置/配套插件安装/Paint.NET' },
-                { text: 'VSCode', link: '/环境配置/制作开发环境配置/配套插件安装/VSCode' }
+                { text: 'Blender', link: '/A2.环境配置/B2.制作开发环境配置/C3.配套插件安装/C3_1.Blender' },
+                { text: 'Paint.NET', link: '/A2.环境配置/B2.制作开发环境配置/C3.配套插件安装/C3_2.Paint.NET' },
+                { text: 'VSCode', link: '/A2.环境配置/B2.制作开发环境配置/C3.配套插件安装/C3_3.VSCode' }
               ]
             }
           ]
         }
       ],
-      '/基础MOD教程/': [
+      '/A3.基础MOD教程/': [
         {
           //text: '教程概述',
           //collapsed: false,
           items: [
-            { text: '板块概述', link: '/基础MOD教程/板块概述' }
+            { text: '基础MOD教程概述', link: '/A3.基础MOD教程/A3_1.基础MOD教程概述' }
           ]
         },
         {
           text: '文件解析',
           //collapsed: false,
           items: [
-            { text: '后缀解析',link: '/基础MOD教程/文件解析/后缀解析' },
-            { text: '缩写解析',link: '/基础MOD教程/文件解析/缩写解析' },
-            { text: '功能解析', link: '/基础MOD教程/文件解析/功能解析' }
+            { text: '后缀解析',link: '/A3.基础MOD教程/B1.文件解析/B1_1.后缀解析' },
+            { text: '缩写解析',link: '/A3.基础MOD教程/B1.文件解析/B1_2.缩写解析' },
+            { text: '功能解析', link: '/A3.基础MOD教程/B1.文件解析/B1_3.功能解析' }
             //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
           ]
         },
@@ -154,9 +157,9 @@ export default defineConfig({
           text: '基础模型替换',
           //collapsed: false,
           items: [
-            { text: '转储导入',link: '/基础MOD教程/基础模型替换/转储导入' },
-            { text: '数据匹配',link: '/基础MOD教程/基础模型替换/数据匹配' },
-            { text: '合并导出', link: '/基础MOD教程/基础模型替换/合并导出' }
+            { text: '转储导入',link: '/A3.基础MOD教程/B2.基础模型替换/B2_1.转储导入' },
+            { text: '数据匹配',link: '/A3.基础MOD教程/B2.基础模型替换/B2_2.数据匹配' },
+            { text: '合并导出', link: '/A3.基础MOD教程/B2.基础模型替换/B2_3.合并导出' }
             //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
           ]
         },
@@ -164,13 +167,13 @@ export default defineConfig({
           text: '完整面部替换',
           //collapsed: false,
           items: [
-            { text: '形态键配置',link: '/基础MOD教程/完整面部替换/形态键配置' },
+            { text: '形态键配置',link: '/A3.基础MOD教程/B3.完整面部替换/B3_1.形态键配置' },
             {
               text: '光照配置',
               //collapsed: false,
               items: [
-                { text: '原生光照',link: '/基础MOD教程/完整面部替换/光照配置/原生光照' },
-                { text: '自定义光照',link: '/基础MOD教程/完整面部替换/光照配置/自定义光照' },
+                { text: '原生光照',link: '/A3.基础MOD教程/B3.完整面部替换/C1.光照配置/C1_1.原生光照' },
+                { text: '自定义光照',link: '/A3.基础MOD教程/B3.完整面部替换/C1.光照配置/C1_2.自定义光照' },
                 //{ text: '合并导出', link: '/基础MOD教程/前置准备/软件相关/Blender/Blender基础' }
                 //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
               ]
@@ -179,12 +182,12 @@ export default defineConfig({
           ]
         }
       ],
-      '/进阶MOD教程/': [
+      '/A4.进阶MOD教程/': [
         {
           //text: '教程概述',
           //collapsed: false,
           items: [
-            { text: '板块概述', link: '/进阶MOD教程/板块概述' }
+            { text: '进阶MOD教程概述', link: '/A4.进阶MOD教程/A4_1.进阶MOD教程概述' }
           ]
         },
         {
@@ -197,8 +200,8 @@ export default defineConfig({
               text: '颜色属性',
               collapsed: false,
               items: [
-                { text: 'COLOR', link: '/进阶MOD教程/颜色通道/颜色属性/COLOR' },
-                { text: 'COLOR1', link: '/进阶MOD教程/颜色通道/颜色属性/COLOR1' }
+                { text: 'COLOR', link: '/A4.进阶MOD教程/B1.颜色通道/C1.颜色属性/C1_1.COLOR' },
+                { text: 'COLOR1', link: '/A4.进阶MOD教程/B1.颜色通道/C1.颜色属性/C1_2.COLOR1' }
               ]
             },
             {
@@ -209,48 +212,48 @@ export default defineConfig({
                   text: '漫反射贴图',
                   //collapsed: false,
                   items: [
-                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/漫反射贴图/配置规范' },
-                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/漫反射贴图/通道解释' }
+                    { text: '配置规范', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D1.漫反射贴图/D1_1.配置规范' },
+                    { text: '通道解释', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D1.漫反射贴图/D1_2.通道解释' }
                   ]
                 },
                 {
                   text: '材质贴图',
                   //collapsed: false,
                   items: [
-                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/材质贴图/配置规范' },
-                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/材质贴图/通道解释' }
+                    { text: '配置规范', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D2.材质贴图/D2_1.配置规范' },
+                    { text: '通道解释', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D2.材质贴图/D2_2.通道解释' }
                   ]
                 },
                 {
                   text: '法线贴图',
                   //collapsed: false,
                   items: [
-                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/法线贴图/配置规范' },
-                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/法线贴图/通道解释' }
+                    { text: '配置规范', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D3.法线贴图/D3_1.配置规范' },
+                    { text: '通道解释', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D3.法线贴图/D3_2.通道解释' }
                   ]
                 },
                 {
                   text: '高光贴图',
                   //collapsed: false,
                   items: [
-                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/高光贴图/配置规范' },
-                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/高光贴图/通道解释' }
+                    { text: '配置规范', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D4.高光贴图/D4_1.配置规范' },
+                    { text: '通道解释', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D4.高光贴图/D4_2.通道解释' }
                   ]
                 },
                 {
                   text: '特效贴图',
                   //collapsed: false,
                   items: [
-                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/特效贴图/配置规范' },
-                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/特效贴图/通道解释' }
+                    { text: '配置规范', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D5.特效贴图/D5_1.配置规范' },
+                    { text: '通道解释', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D5.特效贴图/D5_2.通道解释' }
                   ]
                 },
                 {
                   text: '遮罩贴图',
                   //collapsed: false,
                   items: [
-                    { text: '配置规范', link: '/进阶MOD教程/颜色通道/贴图通道/遮罩贴图/配置规范' },
-                    { text: '通道解释', link: '/进阶MOD教程/颜色通道/贴图通道/遮罩贴图/通道解释' }
+                    { text: '配置规范', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D6.遮罩贴图/D6_1.配置规范' },
+                    { text: '通道解释', link: '/A4.进阶MOD教程/B1.颜色通道/C2.贴图通道/D6.遮罩贴图/D6_2.通道解释' }
                   ]
                 },
               ]
@@ -269,12 +272,12 @@ export default defineConfig({
                   text: '基础',
                   //collapsed: false,
                   items: [
-                    { text: '[Constants]', link: '/进阶MOD教程/配置文件/代码节/基础/Constants' },
-                    { text: '[Present]', link: '/进阶MOD教程/配置文件/代码节/基础/Present' },
-                    { text: '[Resource_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/Resource_Name' },
+                    { text: '[Constants]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_1.[Constants]' },
+                    { text: '[Present]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_2.[Present]' },
+                    { text: '[Resource_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_3.[Resource_Name]' },
                     //{ text: '[Key_Name]', link: '/进阶MOD教程/配置文件文档' },
-                    { text: '[TextureOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/TextureOverride_Name' },
-                    { text: '[ShadereOverride_Name]', link: '/进阶MOD教程/配置文件/代码节/基础/ShadereOverride_Name' }
+                    { text: '[TextureOverride_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_4.[TextureOverride_Name]' },
+                    { text: '[ShadereOverride_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D1.基础/D1_5.[ShadereOverride_Name]' }
                   ]
                 },
                 {
@@ -282,8 +285,8 @@ export default defineConfig({
                   //collapsed: false,
                   items: [
                     //{ text: '操作符', link: '/进阶MOD教程/配置文件文档' },
-                    { text: '[Key_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/Key_Name' },
-                    { text: '[CommandList_Name]', link: '/进阶MOD教程/配置文件/代码节/进阶/CommandList_Name' },
+                    { text: '[Key_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D2.进阶/D2_1.[Key_Name]' },
+                    { text: '[CommandList_Name]', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D2.进阶/D2_2.[CommandList_Name]' }
                    // { text: '[ShaderRegexDiffuse]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '通道解释', link: '/进阶MOD教程/贴图通道文档' }
                   ]
@@ -292,7 +295,7 @@ export default defineConfig({
                   text: '超纲',
                   //collapsed: false,
                   items: [
-                    { text: '着色器正则匹配', link: '/进阶MOD教程/配置文件/代码节/超纲/着色器正则匹配' },
+                    { text: '着色器正则匹配', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D3.超纲/D3_1.着色器正则匹配' },
                     //{ text: '[ShaderRegex_Name]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '[ShaderRegex_Name.Pattern]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '[ShaderRegex_Name.Pattern.Replace]', link: '/进阶MOD教程/配置文件文档' },
@@ -305,8 +308,8 @@ export default defineConfig({
               text: '操作项',
               //collapsed: false,
               items: [
-                { text: '静态', link: '/进阶MOD教程/配置文件/操作项/静态' },
-                { text: '动态', link: '/进阶MOD教程/配置文件/操作项/动态' },
+                { text: '静态', link: '/A4.进阶MOD教程/B2.配置文件/C2.操作项/C2_1.静态' },
+                { text: '动态', link: '/A4.进阶MOD教程/B2.配置文件/C2.操作项/C2_2.动态' },
                 //{ text: '处理', link: '/进阶MOD教程/可视化面板文档' }
               ]
             },
@@ -316,28 +319,28 @@ export default defineConfig({
           text: '着色修改',
           //collapsed: false,
           items: [
-            { text: '简单修改', link: '/进阶MOD教程/着色修改/简单修改' },
-            { text: '接口调用', link: '/进阶MOD教程/着色修改/接口调用' },
-            { text: '高级着色语言', link: '/进阶MOD教程/着色修改/高级着色语言' },
-            { text: '汇编语言', link: '/进阶MOD教程/着色修改/汇编语言' }
+            { text: '简单修改', link: '/A4.进阶MOD教程/B3.着色修改/B3_1.简单修改' },
+            { text: '接口调用', link: '/A4.进阶MOD教程/B3.着色修改/B3_2.接口调用' },
+            { text: '高级着色语言', link: '/A4.进阶MOD教程/B3.着色修改/B3_3.高级着色语言' },
+            { text: '汇编语言', link: '/A4.进阶MOD教程/B3.着色修改/B3_4.汇编语言' }
           ]
         },
         {
           text: '交互面板',
           //collapsed: false,
           items: [
-            { text: '解构', link: '/进阶MOD教程/交互面板/解构' },
-            { text: '重塑', link: '/进阶MOD教程/交互面板/重塑' },
-            { text: '封装', link: '/进阶MOD教程/交互面板/封装' }
+            { text: '解构', link: '/A4.进阶MOD教程/B4.交互面板/B4_1.解构' },
+            { text: '重塑', link: '/A4.进阶MOD教程/B4.交互面板/B4_2.重塑' },
+            { text: '封装', link: '/A4.进阶MOD教程/B4.交互面板/B4_3.封装' }
           ]
         }
       ],
-      '/未归档/': [
+      '/A5.未归档/': [
         {
           //text: '着色调用',
           //collapsed: false,
           items: [
-            { text: '板块概述', link: '/未归档/板块概述' }
+            { text: '未归档概述', link: '/A5.未归档/A5_1.未归档概述' }
           ]
         }
       ]

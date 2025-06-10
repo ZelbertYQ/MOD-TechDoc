@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "MOD技术文档"
   text: "起于技术，但绝不止于技术"
-  tagline: 研究基于3dmigoto的注入式模组
+  tagline: 研究基于3dmigoto的注入式模组（长期施工）
   image:
     src: /logo.gif
     alt: logo
