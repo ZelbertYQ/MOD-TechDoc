@@ -187,7 +187,7 @@ export default defineConfig({
               //collapsed: false,
               items: [
                 { text: '原生光照',link: '/A3.基础MOD教程/B3.完整面部替换/C1.光照配置/C1-1.原生光照' },
-                { text: '自定义光照',link: '/A3.基础MOD教程/B3.完整面部替换/C1.光照配置/C1-2.自定义光照' },
+                { text: '自定义光照',link: '/A3.基础MOD教程/B3.完整面部替换/C1.光照配置/C1-2.自定义光照' }
                 //{ text: '合并导出', link: '/基础MOD教程/前置准备/软件相关/Blender/Blender基础' }
                 //{ text: '资产管理', link: '/基础MOD教程/前置准备/资产管理' },
               ]
@@ -267,7 +267,7 @@ export default defineConfig({
                   text: '超纲',
                   //collapsed: false,
                   items: [
-                    { text: '着色器正则匹配', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D3.超纲/D3-1.着色器正则匹配' },
+                    { text: '着色器正则匹配', link: '/A4.进阶MOD教程/B2.配置文件/C1.代码节/D3.超纲/D3-1.着色器正则匹配' }
                     //{ text: '[ShaderRegex_Name]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '[ShaderRegex_Name.Pattern]', link: '/进阶MOD教程/配置文件文档' },
                     //{ text: '[ShaderRegex_Name.Pattern.Replace]', link: '/进阶MOD教程/配置文件文档' },
